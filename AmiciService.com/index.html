@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Amici Services</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="robots" content="index, follow" />
+<link type="text/css" href="css/style.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css" media="screen" />
+<!--<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> 
+<script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+</script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/fGallery.js"></script>
+<script type="text/javascript" src="js/hover_animation.js"></script>
+<script type="text/javascript">
+		!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>');
+	</script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+			$("a#image1").fancybox();			
+			$("a#image2").fancybox();			
+			$("a#image3").fancybox();			
+			$("a#image4").fancybox();			
+			$("a#image5").fancybox();			
+			$("a#image6").fancybox();			
+			$("a#image7").fancybox();			
+			$("a#image8").fancybox();
+			
+			$("a[rel=group1]").fancybox({
+				'transitionIn'		: 'swing',
+				'transitionOut'		: 'swing',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+			
+			$("#varioustxt1").fancybox({
+            'width'             : '1280px',
+            'height'            : '720px',
+            'autoScale'         : true,
+            'transitionIn'      : 'elastic',
+            'transitionOut'     : 'elastic',
+            'type'              : 'iframe',
+            'hideOnOverlayClick': false,
+            'onClosed'          : function() {
+                                  parent.location.reload(true);
+                                  }
+        });
+
+
+			$("#varioustxt2").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+			
+			
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#variousvideo1").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+			
+			$("#variousvideo2").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+</head>
+<body>
+
+<!-- BEGIN HEADER -->
+<div id="header" style="top:0px!important;">
+	<div id="header_inn">
+		<div id="menu">
+			<ul id="nav" class="nav">
+				<li><a href="#home_about_botm_bg">ABOUT US</a></li>
+				<li><a href="#home_portfolio">PRODUCTS</a></li>
+				<li class="padd"><a href="#home_blog">SERVICES</a></li>
+				<li><a href="#home_contact">CONTACT US</a></li>
+			</ul>
+			<div class="clr"></div>
+		</div><!-- end div #menu -->
+		<div id="top_logo"> <a href="#home_top" class="scroll">&nbsp;</a>
+			<div class="clr"></div>
+		</div><!-- end div #top_logo -->
+		<div class="clr"></div>
+	</div><!-- end div #header_inn-->
+	<div class="clr"></div>
+</div><!-- end div #header -->
+<!-- END HEADER -->
+
+<!-- BEGIN HOME SECTION -->
+<div class="wrapper section" id="home_top" data-key="H">
+	<div id="home">
+		<div id="home_top_botm_bg">
+			<div id="home_top_inn">
+				<div id="home_top_logos">
+					<div id="site_title"><a href="#"><img src="images/amicitoplogo.png" alt="#" width="952" /></a></div>
+					<p><a href="#">&nbsp;</a></p>
+					<div class="clr"></div>
+				</div>
+				<div id="home_slider_outer">
+					<div class="slider-wrapper theme-default">
+						<div id="slider" class="nivoSlider">
+							<!--<img src="images/img_slides/slide_01.gif" alt="#" title="#home_slider_bottom_1" /> -->
+							<img src="images/img_slides/slide_02.jpg" alt="#" title="#home_slider_bottom_2" />
+							<img src="images/img_slides/slide_04.jpg" alt="#" title="#home_slider_bottom_3" />
+							<img src="images/img_slides/MonthlyGrinder.png" alt="#" title="#home_slider_bottom_4" />
+						</div><!-- end div #slider -->
+						<div id="htmlcaption" class="nivo-html-caption"> <!--<strong>This</strong> is an example of a <em>HTML</em> caption with--> <a href="#">a link</a>. </div>
+						<div class="clr"></div>
+					</div><!-- end div .slider-wrapper theme-default -->
+					<!-- <div id="home_slider_bottom_1" class="nivo-html-caption">
+						<h3>COFFEE FEST</h3>
+						<p>If it looks like coffee, smells like coffee, goes well with coffee or is coffee you will find it at Coffee Fest. Everything under the sun that would be found in an upscale coffee shop on either side of the counter, including the counter would be found on the exhibition floor at Coffee Fest. </p>
+						<div class="more_button"> <a href="http://www.coffeefest.com/" target="_blank">&nbsp;</a> </div>
+					</div>end div #home_slider_bottom_1 -->
+					<div id="home_slider_bottom_2" class="nivo-html-caption">
+						<h3>LOCAL ROASTERS</h3>
+						<p>We pride ourselves on who we network with. Here is a few local roasters we appreciate doing business with.</p>
+						<div class="more_button"> <a href="roasters.html" target="_blank">&nbsp;</a> </div>
+					</div><!-- end div #home_slider_bottom_2 -->
+					<div id="home_slider_bottom_3" class="nivo-html-caption">
+						<h3>BARISTA TRAINING</h3>
+						<p>We're proud to offer Barista training as part of an equipment purchase package. Hands on training
+								with an experienced barista is a professional environment.</p>
+						<div class="more_button"> <a href="index.html#home_portfolio" target="_self">&nbsp;</a> </div>
+					</div><!-- end div #home_slider_bottom_3 -->
+					<div id="home_slider_bottom_4" class="nivo-html-caption">
+						<h3>TIP OF THE MONTH!</h3>
+						<p>This months tip: “Be kinder to your grinder”. Regular cleaning and Burr changes on your grinder will increase the flavor and quality of your coffee and decrease the occurences of jammed grinders. This month we are offering a reduced cost on burrs. Please contact us for pricing. </p>
+						<div class="more_button"> <a href="post.html" target="_self">&nbsp;</a> </div>
+					</div><!-- end div #home_slider_bottom_4 -->
+					<div class="clr"></div>
+				</div><!-- end div #home_slider_outer -->
+				<div class="clr">
+                  <div align="justify"></div>
+				</div>
+			</div>
+		  <div align="center"><!-- end div #home_top_inn -->
+		  </div>
+			<div class="home_bttm_banner" id="hello_welcome">		    </div>
+			<div align="center"><!-- end div #hello_welcome -->
+		  </div>
+		  <div class="clr"></div>
+		</div><!-- end div #home_top_botm_bg -->
+		<div class="clr"></div>
+	</div><!-- end div #home_top -->
+	<div class="clr"></div>
+</div>
+<!-- END HOME SECTION -->
+
+<!-- BEGIN ABOUT SECTION -->
+<div id="home_about"  class="section" data-key="A">
+	<div id="home_about_botm_bg">
+		<div id="home_about_inn">
+			<div id="about_go_top"> <a href="#home_top" class="scroll">&nbsp;</a>
+				<div class="clr"></div>
+			</div><!-- end div #about_go_top -->
+		  <div id="home_about_desc">
+				<div id="home_about_desc_left">
+				  <h3>ABOUT US</h3>
+				  <p>&nbsp;</p>
+       			  <div class="clr"></div>
+                  	<li>
+						
+					
+                        
+                        <div class="about_listing_txt">
+                         <img src="images/about_img_Big3.png" alt="#" width="464" height="307" />
+                      </div>
+                  <p>&nbsp;</p>
+                      <div class="about_listing_txt">
+                         
+                
+                  
+            </div>
+               	  </li>
+                 
+                  
+                  <div class="clr"></div>
+	      </div><!-- end div #home_about_desc_left -->
+            
+            <div id="home_about_desc_right">
+			         
+						<p>
+						<h6>WHO WE ARE</h6>
+						</p>
+						
+				 <p> <b>Amici Services</b>is a independent service company specializing in the sale and maintenance of Espresso machines, coffee machines and grinders. In fact we like to say “If coffee runs through it
+				      we do it”. With 15 years experience in the coffee service industry we decided to start our own business and 4 years later we continue
+				      to grow. We recently moved from our home office/shop to a new easily accessible, centrally located Business Park in Parkrose which allows us the space to grow for many years to come.</p>
+                    
+				    
+                        <p>&nbsp;</p>	
+				<!--<span class="fancybox-image"> <a href="images/shoppics/">CLICK HERE TO SEE SOME PICTURES OF OUR SHOP</a> </span>-->
+                       <p>
+              <h6>Why We're Different</h6>
+                      </p>
+                      <p><b>Because We Care!</b> We have a complete showroom where we have equipment ready to tryout. We offer a hands on experience to use and observe what the new equipment capabilities are.
+				      We can also offer the services of a professional barista for training. (picture of show room with steph in front of machine.)
+				      Our knowledge and years of experience are key to our ability to provide exceptional service on Rancilio, Nuova Simoneli, Faema, La San Marco, La Marzocco, La Spazial, Reneka, Rio- Astoria espresso machines and more. We also have expert knowledge on the original ECM line of espresso machines, having worked directly with the manufacturer on improvements to create an optimum performance in an espresso machine.
+		      Coffee brewers such as Bunn, Fetco, Bloomfield, and Curtis are equipment we routinely service, along with the following Grinders, Mazzer Macap, Obel, Rossi, Compak, Swift, Bunn, Grindmaster and Mahlkoenig.</p>
+              
+					<div class="clr"></div>
+			</div><!-- end div #home_about_desc_right -->
+          </div><!-- end div #home_about_desc -->
+			</ul>
+		  <div class="clr"></div>
+							
+													
+	  </div><!-- end div #home_about_listing -->
+			<div class="clr"></div>
+		</div><!-- end div #home_about_inn -->
+		<div class="clr"></div>
+	</div><!-- end div #home_about_botm_bg -->
+	<div class="clr"></div>
+</div>
+<!-- END ABOUT SECTION -->
+
+<!-- BEGIN PORTFOLIO SECTION -->
+<div id="home_portfolio"  class="section" data-key="P">
+	<div id="home_portfolio_botm_bg">
+		<div id="home_portfolio_inn">
+			<div id="portfolio_go_top"> <a href="#home_top" class="scroll">&nbsp;</a>
+				<div class="clr"></div>
+			</div> <!--end div #portfolio_go_top--> 
+			<div id="home_portfolio_desc">
+				<div id="home_portfolio_desc_left">
+					<h3>PRODUCTS</h3>
+					<div class="clr"></div>
+				</div> <!--end div #home_portfolio_desc_left -->
+				<div id="home_portfolio_desc_right">
+					<p> //<strong>To learn more about our products and services please click the boxes below. </strong> We have a complete showroom where we have equipment
+ready to tryout. We offer a hands on experience to use and observe
+what the new equipment's capabilities are.
+We can also offer the services of a professional barista for training, or if you're in our neck of the woods stop by for a cup of coffee. //</p>
+                  
+					<div class="clr"></div>
+				</div> <!--end div #home_portfolio_desc_right -->
+				<div class="clr"></div>
+			</div> <!--end div #home_portfolio_desc -->
+	
+			<div id="portfolio_listing">
+				<ul class="projects image-grid_1" id="image-grid">
+				                   
+				  <li data-category="text"> <img src="images/folio_pic7.jpg" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote1"   id="image1" class="icon_text" rel="varioustxt1" > &nbsp;</a></span>                       
+                        <p>Espresso Machines</p>
+					</li>
+                    
+					<li data-category="text"> <img src="images/brewersIcon.jpg" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote2" id="image2" class="icon_text" a rel="varioustxt1">&nbsp;</a></span> 
+						  <p>Coffee Brewers</p>
+					</li>
+                    
+					<li data-category="text"> <img src="images/folio_pic666.jpg" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote3" id="image3" class="icon_text" rel="gallery3">&nbsp;</a></span> 
+					  <p>Grinders</p>
+					</li>
+                    
+					<li data-category="text"> <img src="images/folio_pic4.png" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote4" id="image4" class="icon_text" rel="gallery4">&nbsp;</a></span> 
+						<p>Accessories</p>
+					</li>
+                    
+                   <li data-category="text"> <img src="images/folio_pic5.jpg" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote5" id="image5" class="icon_text" rel="gallery5">&nbsp;</a></span> 
+						<p>Filtration</p>
+					</li>
+                    
+					<li data-category="text"> <img src="images/folio_pic8.gif" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote6" id="image6" class="icon_text"rel="gallery6">&nbsp;</a></span> 
+						<p>Parts</p>
+					</li>
+                    
+			<li data-category="text"> <img src="images/folio_pic9.png" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote7" id="image7" class="icon_text"rel="gallery7">&nbsp;</a></span> 
+						<p>Used Equipment</p>
+					</li>
+                    
+					<li data-category="text"> <img src="images/folio_pic8.png" alt="#" class="attachment-gallery-thumb wp-post-image"/> <span><a href="#quote8" id="image8" class="icon_text"rel="gallery8">&nbsp;</a></span> 
+						<p>For Owners</p>
+					</li>				
+				</ul>
+				<div class="clr"></div>
+			</div> <!--end div #portfolio_listing -->
+			<div class="clr"></div>
+		</div> <!--end div #home_portfolio_inn--> 
+		<div class="clr"></div>
+	</div> <!--end div #home_portfolio_botm_bg -->
+	<div class="clr"></div>
+</div> <!--end div #home_portfolio-->
+
+<!-- BEGIN FANCYBOX PRODUCTS SECTION CONTENT -->
+<!-- quote1 -->
+<div style="display: none;">
+	<div id="quote1" class="fancybox-iframe">
+     <iframe src="images/products/machines/machinesMain.html" height="720" width="1281" target="_self">
+    </iframe>
+    </iframe>
+    </div>
+    </div>
+    
+<!-- quote2 -->
+<div style="display: none;">
+	<div id="quote2" class="fancybox-iframe"> 
+    <iframe src="images/products/brewers/brewersMain.html" height="720" width="1281"> </iframe>
+    </iframe>
+    </div>
+    </div>
+    
+<!-- quote3 -->
+<div style="display: none;">
+	<div id="quote3" class="fancybox-iframe"> 
+    <iframe src="images/products/grinders/grindersMain.html" height="720" width="1281"> </iframe>
+    </iframe>
+    </div>
+    </div>
+    
+<!-- quote4 -->
+<div style="display: none;">
+	<div id="quote4" class="fancybox-iframe"> 
+    <iframe src="images/products/accessories/accessoriesMain.html" height="720" width="1280"> </iframe>
+  
+    </div>
+    </div>
+   
+<!-- quote5 -->
+<div style="display: none;">
+	<div id="quote5" class="fancybox-iframe"> 
+    <iframe src=" images/products/filtration/filtrationMain.html" height="720" width="1281"> </iframe>
+    </iframe>
+    </div>
+    </div>
+             
+ <!-- quote6 -->
+<div style="display: none;">
+	<div id="quote6" class="fancybox-iframe"> <iframe src="images/products/parts/partsMain.html" height="720" width="1281"> </iframe>
+    </iframe>
+    </div>
+    </div>
+
+ <!-- quoate 7 -->               
+ <div style="display: none;">
+	<div id="quote7" class="quote">
+		<div class="title_quote">Used Equipment and Parts</div>
+		<div class="subtitle_quote">Giving good equipment a second chance at life!</div>
+		<div class="body_quote"> <img src="images/used.jpg" alt="" class="image_quote">
+			<p>We have a constantly changing stock of used parts and equipment. When we expanded our location to include a full service repair shop we ended up with some adorable broken and in need of repair parts and equipment. We couldn't ignore the cute little guys, so we gave them a second shot at life, offering our cusdtomers quality equipment and parts at a lower cost then brand new with the same quality and reliability. If you're looking for the best equipment you can get without breaking the bank, contact us and let us know what you're after chances are we have what you're looking for or something similar ready and waiting for you  </p>
+		</div>
+	</div>
+</div>
+    
+<!-- quote8 -->
+<div style="display: none;">
+	<div id="quote8" class="quote">
+		<div class="title_quote">For Owners</div>
+		<div class="subtitle_quote">Resources for owners of all of our fine products</div>
+		<div class="body_quote"> 
+			<p>Have you ever bought something, taken it home, then realized you have to spend a few hours on the phone with tech support, after spending hours googling and searching? Well we have, and it's not fun, but we know with new and exciting technology comes new and not so exciting problems, that why we have this section; For You. Here you find the following; Driver software for Rancilio and Egro machines along with manufacturer and user beverage presets, Cleaning and Maintenance guides for all of our machines, grinders, and serviceable parts, Owners Manuals for all of our products, Cut Sheets for all of our products, Technical Drawings and CAD files of Rancilio, EGRO, and other machines. We know how difficult it is to find all of this stuff when you're in the middle of a tense situation. So we gathered it up from all over and put it in one bucket for our owners and customers to access, empowering you to access the information you need when you need it. &nbsp; To browse through the information or to download it you can click here (a new window or tab will open) or you can go to www.amiciservice.com/forowners</p>
+		</div>
+	</div><!-- end div #quote2 -->
+    </div>
+</div>
+<!-- quote9 -->
+<div style="display: none;">
+	<div id="quote9" class="fancybox-image"> <iframe src="images/shoppics/" height="720" width="1281"> </iframe>
+    </iframe>
+    </div>
+    </div>            
+
+<!-- quote10 Service Section -->
+<div style="display: none;">
+	<div id="quote10" class="fancybox-iframe"> <iframe src="service.html" height="720" width="1281"> </iframe>
+    </iframe>
+    </div>
+    </div>            
+
+
+
+<!-- END FANCYBOX PRODUCTS SECTION CONTENT -->
+<!-- END PORTFOLIO SECTION -->
+
+<!-- BEGIN BLOG SECTION -->
+<div id="home_blog" class="section" data-key="B">
+	<div id="home_blog_botm_bg">
+		<div id="home_blog_inn">
+			<div id="home_blog_go_top"> <a href="#home_top" class="scroll">&nbsp;</a>
+				<div class="clr"></div>
+			</div><!-- end div home_blog_go_top -->
+			<div id="home_blog_desc">
+				<div id="home_blog_desc_left">
+					<h3>SERVICE</h3>
+					<div class="clr"></div>
+				</div><!-- end div #home_blog_desc_left -->
+				<div id="home_blog_desc_right">
+					<p><strong>24x7 Emergency Oncall Support</strong>//</p>
+                    <p><strong>Maintenance </strong>//</p>
+                    <p><strong>Routine Service and Upkeep</strong>// </p>
+                    <p><strong>Filtration Assesment and Replacement </strong>//.</p>
+                    <p><strong>Infrastructure Service </strong>//</p>
+                   <!-- <p><strong>About this Service </strong>//</p>-->
+					<div class="clr"></div>
+				</div><!-- end div #home_blog_desc_right -->
+				<div class="clr"></div>
+			</div><!-- end div #home_blog_desc -->
+			<div id="home_blog_content">
+				<div id="home_blog_content_left">
+					<div id="home_blog_listing">
+						<ul>
+							<li>
+								<div class="home_blog_pic"> <img src="images/folio_pic8.gif" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="#quote10" id="image10" class="icon_text" title="service">&nbsp;</a></span>
+									<div class="title_blog_pics">Click Here For Service Details</div>
+									<div class="clr"></div>
+								</div>
+								<div class="home_blog_listing_txt">
+									<div class="home_blog_post"> <span class="post_title"> <a href="post.html">SERVICE</a> </span>
+										<!--<h4>SEE MORE: <a href="#">CLICK HERE</a> // CATEGORY: <a href="#">PORTAFILTERS, PARTS, ETC? I DONT KNOW THE NAMES OF ANY PARTS</a></h4>-->
+										<span class="post_comments"><a href="#leave">POST COMMENT ABOUT YOUR SERVICE</a></span>
+										<div class="clr"></div>
+									</div>
+									<label>GOT <br />
+									SERVICE</label>
+									<p>We highly encourage routine maintenance and offer a reduced rate for anyone wanting to sign up. This is service that we will provide every six months and includes using a checklist and replacement of group gaskets and showers. We will discuss our findings with you at the time of service.
+We also offer complimentary water hardness test’s. Maybe a filter could help.
+We offer estimates and recommendations on new and used equipment to best fit your needs. 
+We are authorized to sell Rancilio and Nuova Simoneli Espresso machine and offer warranty work with all sales of New equipment. We also offer a 30 day defective parts warranty on used equipment we sell. <a href="#home_contact" class="scroll">Contact Us!</a>
+
+With the purchase of any Espresso machine we offer complimentary Barista Training by a Professionally trained Barista. The more you know the better your product will be. 
+
+We can also assist you with finding that coffee Roaster that can give you that certain flavor and quality your looking for. Button to list of roasters
+. </p> 
+
+
+										<a class="continue_reading" href="#home_contact">Contact Us If You Want To See What We Can Do For Your Business.</a></p>
+									<div class="clr"></div>
+								</div>
+							</li>
+							<li>
+								<div class="home_blog_pic"> <img src="images/training_Banner.png" alt="#" class="attachment-gallery-thumb wp-post-image" /> <span><a href="mailto:victuttle@gmail.com" id="image7" class="icon_text" title="Emergency Service">&nbsp;</a></span>
+								  <div class="title_blog_pics">EMERGENCY SERVICE </div>
+									<div class="clr"></div>
+							  </div>
+								<div class="home_blog_listing_txt">
+									<div class="home_blog_post"> <span class="post_title"> <a href="post.html">24x7 ON-CALL EMERGENCY SERVICE</a> </span>
+										<!--<h4>SEE MORE: <a href="#">CLICK HERE</a> // CATEGORY: <a href="#">PORTAFILTERS, PARTS, ETC? I DONT KNOW THE NAMES OF ANY PARTS</a></h4>-->
+										<span class="post_comments"><a href="#leave">LEAVE A COMMENT</a></span>
+									  <div class="clr"></div>
+									</div>
+									<label>24x7<br/>
+									SERVICE</label>
+                                    <p>&nbsp;</p>
+                                    <p><b>Has this happened to you? </b>You walk into your business and all of a sudden... “What’s that noise?... Wait a second why is water shooting out of there?" "That's not supposed to be...OMG it’s everywhere!” </p>
+&nbsp;
+<p><b>That’s where we come in!</b> </p>
+<p>A blown pump, a plugged drain, an overfilled boiler, are just a few of the emergencies we see on a daily basis. No matter the issue, our job is to help you get through it, we'll get you up and running as soon as possible. </p>
+<p> <b>HERE'S HOW:</b></p>
+
+									<p><b>First:</b> Call Amici Services 24x7 Emergency number <b>503-460-7008</b><br/>
+<b>Second:</b> If it’s not something that can be fixed on sight we have loaner machines to get you through. We are all about limiting your down time, even in the face of a full blown catastrophy, we're there to keep you open.&nbsp;<br/>
+<b>Third:</b> And finally we talk to you about your options. Together we discuss how to proceed. Remember you’re the boss.</p>
+
+										<a class="continue_reading" href="#home_contact">Contact us about scheduling service calls</a></p>
+									<div class="clr"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="clr"></div>
+				
+				<div id="leave" class="blog_comments">
+								<h3>LEAVE A COMMENT:</h3>
+								<p> We want to know what you thought, and we want everyone else to know too.</p>
+								<div id="leave_comment">
+									<fieldset id="leave_comment_left">
+										<input type="text" name="name" value="Your Name*" />
+										<input type="text" name="email" value="Your e-mail address*" />
+										<input type="text" name="website" value="Your Website*" />
+										<span>HTML tags allowed</span>
+									</fieldset><!-- end div #leave_comment_left -->
+									<fieldset id="leave_comment_right">
+										<textarea name="comment">Your Comment Here!</textarea>
+										<input type="submit" value="" />
+									</fieldset>
+                                    </div><!-- end div #leave_comment_right -->
+									<div class="clr"></div>
+								</div><!-- end div #leave_comment -->
+								<div class="clr"></div>
+							</div><!-- end div #leave -->
+						<div class="clr"></div>
+                        	</div><!-- end div #home_blog_listing -->
+					</div><!-- end div #home_blog_content_left -->
+				<div id="home_blog_content_right">
+						<div id="home_blog_archives" class="home_blog_sidebar">
+								<!--<a class="continue_reading" href="post.html">CLICK HERE TO CHECK OUT ALL THE INTERESTING THINGS HIDDEN WITHIN</a>--></p>
+						<!--	<div class="clr"></div>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>-->
+				
+				<div id="home_blog_content_right">
+					<!--<div id="home_blog_search">
+						<h3>SEARCH</h3>
+						<p>INTO MY BLOG</p>
+						<div id="home_blog_search_div">
+							<input id="search" type="text" name="search" value="Search the Blog" />
+							<a href="#">&nbsp;</a>
+							<div class="clr"></div>
+						</div><!-- end div #home_blog_search_div 
+						<div class="clr"></div>
+					</div>< end div #home_blog_search -->
+					<!--<div id="home_blog_categories">
+						<h3>CATEGORIES</h3>
+						
+						<ul>
+							<li><a href="images/products/parts/partsMain.html">parts</a></li>
+							<li><a href="#">manufacturers</a></li>
+							<li><a href="#">service</a></li>
+							<li><a href="images/products/machines/machinesMain.html">machines</a></li>
+							<li><a href="#">purchase</a></li>
+							<li><a href="#">replacements</a></li>
+							<li><a href="#">cutsheets</a></li>
+						</ul>
+						<div class="clr"></div>
+					</div> end div #home_blog_categories -->
+					<div id="home_blog_comments" class="home_blog_sidebar">
+						<h3>CUSTOMER COMMENTS</h3>
+						<p>WHAT OUR CUSTOMERS THINK OF US:</p>
+						<ul>
+							
+						</ul>
+						<div class="clr"></div>
+					</div><!-- end div #home_blog_comments -->
+					
+				
+					<div class="clr"></div>
+				</div><!-- end div #home_blog_content_right -->
+				<div class="clr"></div>
+			</div><!-- end div #home_blog_content -->
+			<div class="clr"></div>
+		</div><!-- end div #home_blog_inn -->
+		<div class="clr"></div>
+	</div><!-- end div #home_blog_botm_bg -->
+	<div class="clr"></div>
+</div><!-- end div #home_blog -->
+<!-- END BLOG SECTION -->
+
+<!-- BEGIN CONTACT SECTION -->
+<div id="home_contact" class="section" data-key="C">
+	<div id="home_contact_botm_bg">
+		<div id="home_contact_inn">
+			<div id="home_contact_go_top"> <a href="#home_top" class="scroll">&nbsp;</a>
+				<div class="clr"></div>
+			</div><!-- end div #home_contact_go_top -->
+			<div id="home_contact_desc">
+				<div id="home_contact_desc_left">
+					<h3>CONTACT US</h3>
+					<div class="clr"></div>
+					</div><!-- end div #home_contact_desc_left -->
+
+				<div id="home_contact_desc_right">
+					<p><strong>Address </strong>//12017 NE Sumner St.
+Portland, Or. 97220
+  </p>
+			    <p class="phon_no"><strong>Telephone nr</strong>. // (503) 460-7008</p>
+					<p class="email"><strong>E-Mail</strong> // <a href="mailto:victuttle@gmail.com">Contact@AmiciService.com</a></p>
+					<div class="clr"></div>
+
+				</div><!-- end div #home_contact_desc_right -->
+
+			</div><!-- end div #home_contact_desc -->
+			<div class="clr"></div>
+			<div id="contact_filelds">
+					<form action="contactform.php" method="post" id="contact_form">
+					<fieldset id="contact_filelds_left">
+					<input id="name" type="text" name="name" value="Your Name*" />
+					<input id="email" type="text" name="email" value="Your e-mail address*" />
+					<textarea id="subject" name="subject">Subject</textarea>
+					</fieldset>
+					<fieldset id="contact_filelds_right">
+					<textarea id="message" name="message">Type here your message...*</textarea>
+					<input type="submit" value="" />
+					</fieldset>
+					</form>
+					
+			
+
+					<iframe width="950" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=12017+NE+Sumner+st.+Portland,+OR,97220&amp;aq=&amp;sll=45.560018,-122.617058&amp;sspn=0.012455,0.027874&amp;ie=UTF8&amp;hq=&amp;hnear=12017+NE+Sumner+St,+Portland,+Oregon+97220&amp;t=m&amp;view=map&amp;ll=45.560939,-122.471809&amp;spn=0.084132,0.326157&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=12017+NE+Sumner+st.+Portland,+OR,97220&amp;aq=&amp;sll=45.560018,-122.617058&amp;sspn=0.012455,0.027874&amp;ie=UTF8&amp;hq=&amp;hnear=12017+NE+Sumner+St,+Portland,+Oregon+97220&amp;t=m&amp;view=map&amp;ll=45.560939,-122.471809&amp;spn=0.084132,0.326157&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+				<div class="clr"></div>
+			</div><!-- end div #contact_filelds -->
+            <p><img src="images/d0logo.png" alt="#"></p>
+			<div class="clr"></div>
+		</div><!-- end div #home_contact_inn-->
+		<div class="clr"></div>
+	</div><!-- end div #home_contact_botm_bg -->
+	<div class="clr"></div>
+</div>
+<div class="clr"></div>
+<!-- END CONTACT SECTION -->
+
+<script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top-139
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".scroll").click(function(event){
+		//prevent the default action for the click event
+		event.preventDefault();
+
+		//get the full url - like mysitecom/index.htm#home
+		var full_url = this.href;
+
+		//split the url by # and get the anchor target name - home in amiciservices.com/index.htm#home
+		var parts = full_url.split("#");
+		var trgt = parts[1];
+
+		//get the top offset of the target anchor
+		var target_offset = $("#"+trgt).offset();
+		var target_top = target_offset.top;
+
+		//goto that anchor by setting the body scroll top to anchor top
+		$('html, body').animate({scrollTop:target_top}, 500);
+
+		
+	});
+});
+</script>
+</body>
+</html>
